@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To_do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo_container">
+        <h2><img src="/icon.png" alt="" /> To_Do list</h2>
+        <div class="todo">
+            <!-- Input of the user is taken here -->
+          <input
+            type="text"
+            id="input"
+            value=""
+            placeholder="Enter your ToDo task"
+          />
+          <!-- Button to add the tasks -->
+          <button onclick="addTask()" id="submitbtn" type="submit">ADD</button>
+        </div>
+        <div id="list_container">
+          <!-- List of tasks will be generated here -->
+          <ul id="list_items"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
